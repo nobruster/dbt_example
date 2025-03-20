@@ -1,0 +1,15 @@
+dbt_big:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: 'dbtspec'
+      dataset: 'dbt_dw'
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      location: US
+      priority: interactive
+      threads: 4
+      keyfile: /home/bruno/path/dbtspec-2bc96b41e8e0.json
+

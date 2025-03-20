@@ -1,0 +1,89 @@
+[0m17:02:38.344241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a14338e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a1282bc40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a1282bbe0>]}
+
+
+============================== 17:02:38.351119 | 044449f5-8e31-4b87-be06-f31a8902f4fa ==============================
+[0m17:02:38.351119 [info ] [MainThread]: Running with dbt=1.8.0
+[0m17:02:38.353337 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'debug': 'False', 'profiles_dir': '/home/bruno/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt init', 'send_anonymous_usage_stats': 'True'}
+[0m17:02:44.285299 [debug] [MainThread]: Starter project path: /home/bruno/Documents/trn-spec-engenharia-dados-airflow/astro1/.venv/lib/python3.9/site-packages/dbt/include/starter_project
+[0m17:02:44.304280 [info ] [MainThread]: 
+Your new dbt project "dbt_big" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m17:02:44.305930 [info ] [MainThread]: Setting up your profile.
+[0m17:03:15.837125 [info ] [MainThread]: Profile dbt_big written to /home/bruno/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m17:03:15.838636 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 37.61247, "process_user_time": 2.546556, "process_kernel_time": 1.319146, "process_mem_max_rss": "196936", "process_out_blocks": "80", "process_in_blocks": "0"}
+[0m17:03:15.839634 [debug] [MainThread]: Command `dbt init` succeeded at 17:03:15.839470 after 37.61 seconds
+[0m17:03:15.840634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a14338e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f19f98ff7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f1a12a82190>]}
+[0m17:03:15.841993 [debug] [MainThread]: Flushing usage events
+[0m17:05:30.870366 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4adefdd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4ac3f0b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4ac3f0ac0>]}
+
+
+============================== 17:05:30.875980 | e51f50ac-db22-4619-810b-971b7e046da7 ==============================
+[0m17:05:30.875980 [info ] [MainThread]: Running with dbt=1.8.0
+[0m17:05:30.877743 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bruno/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:30.891920 [info ] [MainThread]: dbt version: 1.8.0
+[0m17:05:30.893472 [info ] [MainThread]: python version: 3.9.19
+[0m17:05:30.894890 [info ] [MainThread]: python path: /home/bruno/Documents/trn-spec-engenharia-dados-airflow/astro1/.venv/bin/python
+[0m17:05:30.896891 [info ] [MainThread]: os info: Linux-5.15.0-131-generic-x86_64-with-glibc2.35
+[0m17:05:32.130662 [info ] [MainThread]: Using profiles dir at /home/bruno/.dbt
+[0m17:05:32.131552 [info ] [MainThread]: Using profiles.yml file at /home/bruno/.dbt/profiles.yml
+[0m17:05:32.132949 [info ] [MainThread]: Using dbt_project.yml file at /home/bruno/dbt_ude/dbt_example/dbt_project.yml
+[0m17:05:32.133720 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m17:05:32.136060 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.3477669, "process_user_time": 2.882449, "process_kernel_time": 0.521083, "process_mem_max_rss": "202544", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m17:05:32.136933 [debug] [MainThread]: Command `dbt debug` failed at 17:05:32.136756 after 1.35 seconds
+[0m17:05:32.138512 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4adefdd00>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4ac3f0b80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff491bed250>]}
+[0m17:05:32.139341 [debug] [MainThread]: Flushing usage events
+[0m17:05:38.842502 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff49e214e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff49c707c40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff49c707be0>]}
+
+
+============================== 17:05:38.848953 | 557d329e-e0b9-4096-898b-8391916558b9 ==============================
+[0m17:05:38.848953 [info ] [MainThread]: Running with dbt=1.8.0
+[0m17:05:38.850015 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'profiles_dir': '/home/bruno/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt debug', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m17:05:38.868529 [info ] [MainThread]: dbt version: 1.8.0
+[0m17:05:38.870494 [info ] [MainThread]: python version: 3.9.19
+[0m17:05:38.873256 [info ] [MainThread]: python path: /home/bruno/Documents/trn-spec-engenharia-dados-airflow/astro1/.venv/bin/python
+[0m17:05:38.875244 [info ] [MainThread]: os info: Linux-5.15.0-131-generic-x86_64-with-glibc2.35
+[0m17:05:40.029731 [info ] [MainThread]: Using profiles dir at /home/bruno/.dbt
+[0m17:05:40.031251 [info ] [MainThread]: Using profiles.yml file at /home/bruno/.dbt/profiles.yml
+[0m17:05:40.032572 [info ] [MainThread]: Using dbt_project.yml file at /home/bruno/dbt_ude/dbt_example/dbt_project.yml
+[0m17:05:40.033549 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m17:05:40.037376 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.2753117, "process_user_time": 2.977856, "process_kernel_time": 0.471179, "process_mem_max_rss": "203084", "command_success": false, "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m17:05:40.038564 [debug] [MainThread]: Command `dbt debug` failed at 17:05:40.038303 after 1.28 seconds
+[0m17:05:40.039495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff49e214e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff49c8eaca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff49c0b4bb0>]}
+[0m17:05:40.040718 [debug] [MainThread]: Flushing usage events
+[0m17:24:03.721672 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0815fd0e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08144c8ca0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08144c8c40>]}
+
+
+============================== 17:24:03.728424 | d285bc98-1730-452b-90fa-4070a5930a4b ==============================
+[0m17:24:03.728424 [info ] [MainThread]: Running with dbt=1.8.0
+[0m17:24:03.730275 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/bruno/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': 'logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:24:03.742675 [info ] [MainThread]: dbt version: 1.8.0
+[0m17:24:03.743802 [info ] [MainThread]: python version: 3.9.19
+[0m17:24:03.745289 [info ] [MainThread]: python path: /home/bruno/Documents/trn-spec-engenharia-dados-airflow/astro1/.venv/bin/python
+[0m17:24:03.746988 [info ] [MainThread]: os info: Linux-5.15.0-131-generic-x86_64-with-glibc2.35
+[0m17:24:04.967679 [info ] [MainThread]: Using profiles dir at /home/bruno/.dbt
+[0m17:24:04.968760 [info ] [MainThread]: Using profiles.yml file at /home/bruno/.dbt/profiles.yml
+[0m17:24:04.969567 [info ] [MainThread]: Using dbt_project.yml file at /home/bruno/dbt_ude/dbt_example/dbt_project.yml
+[0m17:24:04.970451 [error] [MainThread]: Encountered an error:
+Internal Error
+  Profile should not be None if loading profile completed
+[0m17:24:04.972137 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 1.3290374, "process_user_time": 3.050256, "process_kernel_time": 0.427252, "process_mem_max_rss": "203008", "process_out_blocks": "8", "command_success": false, "process_in_blocks": "0"}
+[0m17:24:04.973162 [debug] [MainThread]: Command `dbt debug` failed at 17:24:04.972735 after 1.33 seconds
+[0m17:24:04.973804 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0815fd0e80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f0813ecd280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f08144c8cd0>]}
+[0m17:24:04.975055 [debug] [MainThread]: Flushing usage events
