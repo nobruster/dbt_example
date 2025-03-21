@@ -22,7 +22,6 @@ clean-targets:         # directories to be removed by `dbt clean`
   - "target"
   - "dbt_packages"
 
-
 # Configuring models
 # Full documentation: https://docs.getdbt.com/docs/configuring-models
 
@@ -34,3 +33,23 @@ models:
     # Config indicated by + and applies to all files under models/example/
     example:
       +materialized: view
+    staging:
+      schema: staging
+      +materialized: table
+      tags: ['staging']
+
+    intermediate:
+      schema: staging
+      +materialized: view #ephemeral
+      tags: ['intermediate']
+
+    marts: 
+      schema: marts 
+      materialized: table
+      tags: ['marts']
+
+seeds:
+  dbt_big:
+    +enabled: true
+    +schema: seeds
+
