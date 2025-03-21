@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: northwind
+    description: "Dados brutos do sistema empresa"
+    schema: dbt_dw_seeds
+    loader: bigquery
+
+    tables:
+      - name: orders
+        description: "Tabela com os dados lancamentos financeiro da empresa"
+        columns:
+          - name: order_id INT64,
+          - name: customer_id STRING(65535),
+          - name: employee_id INT64,
+          - name: order_date DATE,
+          - name: required_date DATE,
+          - name: shipped_date DATE,
+          - name: ship_via INT64,
+          - name: freight FLOAT64,
+          - name: ship_name STRING(65535),
+          - name: ship_address STRING(65535),
+          - name: ship_city STRING(65535),
+          - name: ship_region STRING(65535),
+          - name: ship_postal_code STRING(65535),
+          - name: ship_country STRING(65535)

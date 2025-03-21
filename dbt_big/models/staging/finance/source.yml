@@ -1,0 +1,42 @@
+version: 2
+
+sources:
+  - name: finance
+    description: "Dados brutos do sistema financeiro"
+    schema: data_set_financial
+    loader: bigquery
+    loaded_at_field: data_carga
+    meta: 
+      owner: "empresa byty"
+    freshness: # default freshness
+      warn_after: {count: 1, period: day}
+      error_after: {count: 2, period: day}
+
+    tables:
+      - name: dados_financeiros
+        description: "Tabela com os dados lancamentos financeiro da empresa"
+        columns:
+          - name: nome
+            description: "nome do lancamento"
+          - name: data
+            description: " data do lancamento"
+          - name: valor
+            description: "valor do lancamento"
+          - name: status
+            description: "status do lancamentoi"
+          - name: banco
+            description: "banco do lancamento"
+          - name:  destino
+            description: "destino do lancamento"
+          - name: responsavel
+            description: " responsavel pelo lancamento"
+          - name: tipo
+            description: "tipo de lancamento"
+          - name: valor_real
+            description: "valor real do lancamento"
+          - name: categoria
+            description: " categoria do lancamento"
+          - name: mes
+            description: " mes do lancamento"
+          - name: id
+            description: "id do lancamento"
